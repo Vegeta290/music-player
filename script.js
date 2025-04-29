@@ -15,7 +15,7 @@ function loadTrack(index) {
     const track = playlist[index];
     audio.src = track.src;
   
-    // Automatically set title from file name (remove .mp3)
+
     const cleanTitle = track.src.replace(".mp3", "").replace(/[-_]/g, " ");
     title.textContent = cleanTitle;
   }
@@ -55,7 +55,7 @@ document.getElementById("next").addEventListener("click", () => {
 
 const volumeSlider = document.getElementById("volume");
 
-// Set initial volume
+
 audio.volume = volumeSlider.value;
 
 volumeSlider.addEventListener("input", () => {
@@ -63,5 +63,5 @@ volumeSlider.addEventListener("input", () => {
 });
 
 
-// Load first track
+
 loadTrack(currentTrack);
