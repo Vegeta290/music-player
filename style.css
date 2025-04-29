@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  
+  .player {
+    background: rgba(34, 34, 34, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+  }
+  
+  
+  .controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  #progress {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #volume {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .background-shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  .shape1 {
+    width: 200px;
+    height: 200px;
+    background: #ff9a9e;
+    top: -50px;
+    left: -50px;
+  }
+  
+  .shape2 {
+    width: 250px;
+    height: 250px;
+    background: #fad0c4;
+    bottom: -80px;
+    right: -60px;
+  }
+  
